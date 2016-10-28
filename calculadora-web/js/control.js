@@ -1,10 +1,10 @@
 var memoria;
 
-function agregarAlDisplay(valor){
+function agregarADisplay(valor){
     //TODO: Tengo que ingresar en el input el valor que me llega
     let pantalla;
- pantalla= $("#display").eval + valor;
- $("#display").html(pantalla);   
+ pantalla= $("#display").val() + valor;
+ $("#display").val(pantalla);   
 
 }
 function operacion(operador){
@@ -14,31 +14,31 @@ function operacion(operador){
         // TODO: llamar a la calculadora con el valor de memoria, el valor del display 
         sumar(memoria,document.getElementById("display"));
     if( "+"== operador){
-      memoria = $("#display").eval;
-      $("#display").html("   ");
-      if($("#display").html =="="){
-        sumar(memoria,document.getElementById("#display").eval);
+      memoria = $("#display").val();
+      $("#display").val("   ");
+      if($("#display").val() =="="){
+        sumar(memoria,document.getElementById("#display").val());
       }
      } 
 if( "*"== operador){
-      memoria = $("#display").eval;
-      $("#display").html("  ");
-      if($("#display").html =="="){
-        multiplicar(memoria,document.getElementById("#display").eval);
+      memoria = $("#display").val();
+      $("#display").val("  ");
+      if($("#display").val()=="="){
+        multiplicar(memoria,document.getElementById("#display").val());
       }
      } 
 if( "/"== operador){
-      memoria = $("#display").eval;
-      $("#display").html("   ");
-      if($("#display").html =="="){
-        dividir(memoria,document.getElementById("#display").eval);
+      memoria = $("#display").val();
+      $("#display").val("   ");
+      if($("#display").val =="="){
+        dividir(memoria,document.getElementById("#display").val());
       }
      } 
 if( "-"== operador){
-      memoria = $("#display").eval;
-      $("#display").html("   ");
-      if($("#display").html =="="){
-        restar(memoria,document.getElementById("#display").eval);
+      memoria = $("#display").val();
+      $("#display").val("   ");
+      if($("#display").val =="="){
+        restar(memoria,document.getElementById("#display").val());
       }
      } 
      
