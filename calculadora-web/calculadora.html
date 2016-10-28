@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculadora</title>
-    <link rel="stylesheet" type=text/css href="CALCULADORA-WEB/calculadora.css">
+    <link rel="stylesheet" type=text/css href="css/calculadora.css"></link>
+    <script type="text/javascript" src="js/calculadora.js"></script>
+    <script type="text/javascript" src="js/control.js"></script>
+     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    
 
 </head>
 <body>
@@ -23,12 +27,12 @@
      <input type="button" value="8" title="8" onclick="agregarADisplay(8)"></div> <br>
      <div id="teclas4">
        <input type="button" value="9" title="9" onclick="agregarADisplay(9)">
-    <input type="button" name="+" value="+" title="+" onclick="operacion(+)">
-    <input type="button" name="-"value="=" title="=" onclick="operacion(-)"></div> <br>
+    <input type="button" name="+" value="+" title="+" onclick="operacion('+')">
+    <input type="button" name="-"value="=" title="=" onclick="operacion('-')"></div> <br>
     <div id="teclas5">
- <input type="button" name="/"value="/" title="/" onclick="operacion(/)">
- <input type="button" name="*"value="*" title="*" onclick="operacion(*)">
-    <input type="button" name="="value="=" title="=" onclick="operacion(=)"></div><br>
+ <input type="button" name="/"value="/" title="/" onclick="operacion('/')">
+ <input type="button" name="*"value="*" title="*" onclick="operacion('*')">
+    <input type="button" name="="value="=" title="=" onclick="operacion('=')"></div><br>
 </div>
 </body>
 </html>
