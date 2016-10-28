@@ -35,11 +35,26 @@ if( "/"== operador){
       }
      } 
 if( "-"== operador){
-      memoria = $("#display").val();
+      memoria =  - $("#display").val();
       $("#display").val("   ");
       if($("#display").val =="="){
-        restar(memoria,document.getElementById("#display").val());
+        restar(document.getElementById("#display").val());
       }
      } 
-     
+if("=" == operador){
+  memoria = $("#display").val();
+   $("#display").val("   ");
+   if(operador=='+'){
+     sumar(memoria,document.getElementById("#display").val());
+   }
+  if(operador=='*'){
+     multiplicar(memoria,document.getElementById("#display").val());
+   }
+  if(operador=='-'){
+     restar(memoria,document.getElementById("#display").val());
+   }
+   if(operador=='/'){
+     dividir(memoria,document.getElementById("#display").val());
+   }
+}     
 }
