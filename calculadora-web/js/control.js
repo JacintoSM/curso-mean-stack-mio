@@ -12,38 +12,37 @@ function operacion(operador){
         //TODO: Almacenarlo en la memoria
     //TODO: en caso de que me llegue un igual
         // TODO: llamar a la calculadora con el valor de memoria, el valor del display 
-        sumar(memoria,document.getElementById("display"));
+       
     if( "+"== operador){
       memoria = $("#display").val();
       $("#display").val("   ");
-      if($("#display").val() =="="){
+      while  ($("#display").val()!=" " ){      
         sumar(memoria,document.getElementById("#display").val());
       }
      } 
 if( "*"== operador){
       memoria = $("#display").val();
       $("#display").val("  ");
-      if($("#display").val()=="="){
+      while  ($("#display").val()!=" " ){
         multiplicar(memoria,document.getElementById("#display").val());
       }
      } 
 if( "/"== operador){
       memoria = $("#display").val();
       $("#display").val("   ");
-      if($("#display").val =="="){
-        dividir(memoria,document.getElementById("#display").val());
+      while  ($("#display").val()!=" " ){
+         dividir(memoria,document.getElementById("#display").val());
       }
      } 
 if( "-"== operador){
       memoria =  - $("#display").val();
       $("#display").val("   ");
-      if($("#display").val =="="){
-        restar(document.getElementById("#display").val());
+       while  ($("#display").val()!=" " ){
+         restar(memoria,document.getElementById("#display").val());
       }
      } 
 if("=" == operador){
-  memoria = $("#display").val();
-   $("#display").val("   ");
+ 
    if(operador=='+'){
      sumar(memoria,document.getElementById("#display").val());
    }
